@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HTML的基本标记</title>
+<style type="text/css">
+body,td,th {
+	font-size: 24px;
+}
+</style>
+</head>
+
+<body>
+ <ol type="1" start="1">
+    <li>
+      <h2>标题文字标记：&lt;hn&gt;</h2>
+      在HTML文档中,标题(Heading )很重要。标题是通过&lt;h1&gt;~&lt;h6&gt;共6对标记进行定义的。&lt;h1&gt;定义最大的标题，&lt;h6&gt; 定义最小的标题。<br>
+    </li>
+    <li><h2>段落标记：&lt;p&gt;和换行标记：&lt;br/&gt;</h2>
+            不论是在普通文档，还是在网页文字中，合理地划分段落会使文字显示更加美观，要表达的内容也更加清晰。在HTML文件中，使用段落标记&lt;p&gt;来描述段落。网页显示时，包含在&lt;p&gt;&lt;/p&gt;标记对中的内容会显示在-一个段落里。如果想另起一-行，可使用换行标记&lt;br/&gt;。<br>
+    </li>
+    <li><h2>快标记：&lt;div&gt;和&lt;span&gt;</h2>
+    &lt;div&gt;和&lt;span&gt;标记的作用都是用于定义页面内容的容器，用于编排页面布局，本身没有具体
+的显示效果。这两个标记的显示效果由style属性或CSS来定义。 </li>
+    <li><h2>列表标记</h2>
+    	<ol type="I">
+        	<li><h4>有序列表标记&lt;o1&gt;</h4>
+            有序列表是-一个项目的序列，各项目前标有数字以表
+        	示顺序。有序列表由&lt;ol&gt;&lt;/0l&gt;标记对实<br>
+        	现，在&lt;ol&gt;&lt;/ol&gt;标记之间使用成对的&lt;li&gt;&lt;/i&gt;标记添加列表项目。定义有序列表的语法格式如下。<br>
+        	&lt;ol type=&quot;&quot; start=&quot;&quot;&gt;<br>
+        	&lt;1i&gt;列表信息&lt;/1i&gt;<br>
+        	&lt;1i&gt;列表信息&lt;/1i&gt;<br>
+        	&lt;1i&gt;列表信息&lt;/1i&gt;<br>
+        	......<br>
+        	&lt;/o1&gt;<br>
+        	默认情况下，有序列表的列表项目前显示1、2、....字号，从数字1开始计数。可以使用
+        	type属性修改有序列表序号的样式，也可以定义start属性设置列表序号的起始值。
+        	</li>
+            <li><h4>无序列表标记&lt;ul&gt;</h4>
+              无序列表也是-一个项目的序列，不用数字而采用一个符号标志每个项目。无序列表由成对的&lt;ul&gt;&lt;/ul&gt;标记对实现，&lt;ul&gt;&lt;/ul&gt;标记之 间使用成对的&lt;li&gt;&lt;/i&gt;标记可添加列表项目。无序列表的语法格式如下。<br>
+              &lt;ul type=&quot;&gt;<br>
+              &lt;1i&gt;列表信息&lt;/1i&gt;<br>
+              &lt;1i&gt;列表信息&lt;/1i&gt;<br>
+              &lt;1i&gt;列表信息&lt;/1i&gt;<br>
+              &lt;/u1&gt;<br>
+          默认情况下，无序列表的每个列表项目前显示黑色实心圆点。可以使用type属性修改无序列表符号的样式，type 属性的具体取值及说明如表2-4所示，其中，type属性值必须小写。 </li>
+            <li><h4>自定义列表&lt;dl&gt;</h4>
+              自定义列表不是一一个项目的序列，它是一系列项目和它们的解释。自定义列表以&lt;dI&gt;标记开始，自定义列表项目以&lt;d&gt;开始，自定义列表的解释以&lt;dd&gt;开始。自定义列表的语法格式如下。<br>
+              &lt;dl&gt;<br>
+              &lt;dt&gt;名称&lt;dd&gt;说明.<br>
+              &lt;dt&gt;名称&lt;dd&gt;说明<br>
+              &lt;dt&gt;名称&lt;dd&gt;说明<br>
+              .....<br>
+              &lt;/dl&gt;<br>
+              &lt;d&gt;标记定义了组成列表项的名称部分，此标记只能在&lt;dI&gt;标记中使用。&lt;dd&gt;用于解释说明&lt;dt&gt;标记所定义的项目，此标记也只能在&lt;dl&gt;标记中使用。<br>
+            </li>
+        </ol>
+    </li>
+</ol>
+</body>
+</html>
