@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>表单</title>
+<style type="text/css">
+body,td,th {
+	font-size: 24px;
+}
+</style>
+</head>
+
+<body>
+<ul>
+    <li>
+      <h2>表单定义标记&lt;form&gt;<br></h2>
+        在 HTML 中，只要在需要使用表单的地方插入成对的表单标记&lt;form&gt;&lt;/form&gt;就可以完成<br>
+      表单的定义，基本语法格式如下。<br>
+      &lt;form name=&quot;formName&quot; method=&quot;post/get&quot; action=&quot;url&quot; enctype=&quot;encoding&quot;&gt;&lt;/form&gt;<br>
+      表单标记的部分属性及说明：<br>
+        <ol type="1" start="1">
+            <li>name：表单名称</li>
+            <li>metho：表单发送的方式,可以是&quot;post&quot;或是&quot;get&quot;</li>
+            <li>action：表单处理程序</li>
+            <li>enctype：表单编码方式</li>
+        </ol>
+    </li>
+    <li><h2>输人标记&lt;input&gt;</h2>
+            表单是网页提供的交互式操作手段，首先，用户必须在表单控件中输入必要的信息，发送到服务器请求响应，然后服务器将结果返回给用户，这样就体现了交互性。&lt;input&gt;标记是表单中输入信息时常用的标记，通常包含在&lt;form&gt;和&lt;/form&gt;标记中，其语法格式如下。<br>
+            &lt;input name=&quot;控件名称&quot;type=&quot;控件类型&quot;&gt;<br>
+            其中, name属性用于定义与用户交互控件的名称; type属性设置控件的类型,可以是文本框、密码框、单选按钮、复选框等。<br>
+            <a href="input标记的type属性值及说明.html"> &lt;input&gt;标记的type属性值及说明</a><br>
+      <br>
+    </li>
+    <li><h2>列表框标记&lt;select&gt;</h2>
+      在HTML 文件中，使用列表框标记&lt;select&gt;，同时嵌套列表项标记&lt;option&gt;，可以实现列表框效果，其语法格式如下。<br>
+      &lt;form&gt;<br>
+      &lt;select name=&quot;列表框名称&quot;size=&quot;&quot;&gt;<br>
+      &lt;option value=&quot;选项值&quot;/&gt;选项显示内容<br>
+      &lt;option value=&quot;选项值&quot;/&gt;选项显示内容<br>
+      ........<br>
+      &lt;/select&gt;<br>
+      &lt;/form&gt;<br>
+      其中，&lt;select&gt;标记用于定义列表框，&lt;option&gt;标记用于向列表框中添加列表项目。&lt;select&gt;标记中的size属性用于定义列表框的行数，size属性未定义具体值或设置为1时控件显示为下拉列表效果。如果将size属性设置为大于1的正整数，控件显示为列表框。<br>
+    </li>
+    <li><h2>文本域输入标记&lt;textarea&gt;</h2>
+      有时网页中需要一个多行的文本域，用来输入更多的文字信息，行间可以换行并将这些信息作为表单元素的值提交到服务器。例如:<br>
+      &lt;form&gt;&lt;textarea name=&quot;mytext&quot; rows=&quot;5&quot; cols=&quot;100&quot; &gt;&lt;/textarea&gt;&lt;/form&gt;<br>
+      在表单中，只要插入成对的&lt;textarea&gt;&lt;/textarea&gt;就可以插入文本域。<br>
+    </li>
+    <li><h2><a href="HTML5表单新增属性.html">HTML5表单新增属性</a></h2></li>
+    <li><h2><a href="HTML5新增input类型.html">HTML5新增input类型</a></h2></li>
+</ul>
+</body>
+</html>

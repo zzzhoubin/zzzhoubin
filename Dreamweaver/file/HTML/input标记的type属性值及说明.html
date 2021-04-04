@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>&lt;input&gt;标记的type属性值及说明</title>
+<style type="text/css">
+body,td,th {
+	font-size: 24px;
+}
+</style>
+</head>
+
+<body>
+    <ol type="1" start="1">
+    	<li><h2>文本框——text</h2>
+    	  将&lt;input&gt;标记中的type属性值设置为text，就可以在表单中插入文本框。在此文本框中可以输入任何类型的数据，但输入的数据将以单行显示，不会换行。例如，使用&lt;input&gt;标记输入姓名的代码如下。<br>
+    	  姓名:&lt;input name=&quot;username&quot; type=&quot;text&quot; maxlength=&quot;12&quot; size=&quot;8&quot; value-' myname&quot;/&gt;<br>
+    	  其中，name属性用于定义文本框的名称。maxlength和 size属性用于指定文本框的宽度和允许用户输人最大的字符数，更多情况下，采用CSS设置。value指定文本框的默认值。<br>
+    	</li>
+        <li><h2>密码框——password</h2>
+          将&lt;input&gt;标记中的 type属性值设置为password,就可以在表单中插入密码框涉及到各属性的含义与文本框相同。在此密码框中可以输入任何类型的数据，这些数据都将以实心圆点的形式显示,以保护密码的安全,例如:<br>
+          密码:&lt;input name=&quot;pwd&quot; type=&quot;password&quot; maxlength=&quot;8&quot; size=&quot;8&quot;/&gt;<br>
+        </li>
+        <li><h2>复选框—checkbox</h2>
+          复选框允许在一组选项中选择任意多个选项。将&lt;input&gt;标记中的 type属性值设置为checkbox，就可以在表单中插入复选框。通过复选框，用户可以在网页中实现多项选择。例如,<br>
+          请选择:&lt;input name=&quot;checkl&quot; type=&quot;check&quot; value=&quot;football&quot; checked /&gt;<br>
+          其中，value属性指定的复选框被选中是该控件的值，checked 用来设置复选框默认被选中。<br>
+        </li>
+        <li><h2>单选按钮———radio</h2>
+          单选按钮表示互相排斥的选项。在某单选按钮组（由两个或多个同名的按钮组成）中选择一个按钮时，就会取消对该组中其他所有按钮的选择。将&lt;input&gt;标记中的type属性值设置为radio,就可以在表单中插入一个单选按钮。在选中状态时，按钮中心会有一个实心圆点。<br>
+        </li>
+        <li><h2>标准按钮——button</h2>
+          将&lt;input&gt;标记中的type属性值设置为button,就可以在表单中插入标准按钮，例如:<br>
+          &lt;input name= &quot;buttonl&quot; type= &quot;button&quot; value= &quot;确认&quot;/&gt;其中，&quot;value&quot;属性定义的是浏览网页时按钮上显示的标题文字，button按钮一般由 onclick事件响应。<br>
+        </li>
+        <li><h2>提交/重置按钮--submit/reset</h2>
+        将&lt;inpu&gt;标记中的type属性设置为submit，就可以在表单中插人一个提交按钮，例如:&lt;input name= &quot;submit1&quot; type= &quot;submit&quot; value= &quot;提交&quot;/&gt;<br>
+          其中，&quot;value&quot;属性定义的是浏览网页时按钮上显示的标题文字。当用户单击此按钮时，表单中所有控件的&quot;名称/值&quot;被提交，提交目标是 form元素的action属性所定义的URL 地址。<br>
+          若将type属性设置为reset，则插入重置按钮，例如:<br>
+          &lt;input name= &quot;resetl&quot; type= &quot;reset&quot; value= &quot;重置&quot;/&gt;<br>
+        </li>
+        <li><h2>图像域——image</h2>
+          用户在浏览网页时，有时会看到某些网站的按钮不是普通样式，而是用一张图像做的提交或其他类型的按钮，这种效果可以通过插入图像域来实现。将&lt;input&gt;标记中的 type属性值设置为image，就可以在表单中插入图像域,语法格式如下。<br>
+          &lt;input name=&quot;buttonname&quot; type=&quot;image&quot; src=&quot;url&quot;/&gt;其中，&quot;src&quot;属性定义插入图像的来源路径。<br>
+        </li>
+    </ol>
+</body>
+</html>

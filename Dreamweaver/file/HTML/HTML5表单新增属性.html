@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HTML5表单新增属性</title>
+<style type="text/css">
+body,td,th {
+	font-size: 24px;
+}
+</style>
+</head>
+
+<body>
+	<ol type="1" start="1">
+    	<li><h2>form属性</h2>
+        在HTML4中，表单内的元素必须书写在表单内部，但是在 HTML5中，可以将表单元素写在页面上的任何位置，然后给该元素指定一个form属性,属性值为该表单的id( id是表单的唯一属性标识),通过这种方式声明该元素属于哪个具体的表单。下面的代码为textarea控件指明了form属性。<br>
+        &lt;form id=&quot;myform&quot; &gt;<br>
+        姓名:&lt;input type=&quot;text&quot; value=&quot;aaaa&quot;/&gt;&lt;br/&gt;<br>
+        确认:&lt;input type=&quot;submit&quot; name=&quot;s2&quot;/&gt;<br>
+        &lt;/form&gt;&lt;br/&gt;<br>
+        简历:&lt;textarea form=&quot;myform&quot;&gt;&lt;/textarea&gt;<br>
+        <br>
+    	</li>
+        <li><h2>formmethod和formaction属性</h2>
+        在HTML4中，表单通过唯一的 action属性将表单内的所有元素统一提交到另一个页面，也通过唯一的method属性来统一指定的提交方法是get或post。在 HTML5中增加的 formaction属性，使得点击不同的按钮，可以将表单提交到不同的页面，同时，也可以使用formmethod属性对每个表单元素分别指定不同的提交方法。</li>
+        <li><h2>placeholder属性</h2>
+        placeholder是指当文本框&lt;input type=&quot;text&quot;&gt;处于未输入状态时文本框中显示的输人提示。例如:<br>
+          &lt;input type=&quot;text&quot; placeholder = &quot;default text&quot;/&gt;<br>
+        </li>
+        <li><h2>autofocus属性</h2>
+        若给文本框、选择框或按钮等控制加上该属性，则当页面打开时，该控件将自动获得焦点，从而替代使用JavaScript 代码。<br>
+        例如，下面的代码使用aotofocus属性为文本框设置了焦点。需要注意的是，一个页面上只能有一个控件具有该属性。<br>
+          &lt;input type=&quot;text&quot; autofocus&gt;<br>
+        
+        </li>
+        <li><h2>list属性</h2>
+        在 HTML5中，为单行文本框&lt;input type=&quot;text&quot;&gt;增加了一个list属性。该属性的值是某个datalist元素的id。datalist 也是HTML5中新增的元素，该元素类似于选择框(&lt;select&gt;)，但是当用户想要设定的值不在选择列表之内时，允许其自行输人。datalist元素本身并不显示，而是当文本框获得焦点时以提示输入的方式显示。例如，下面代码为文本框设置了list属性。<br>
+          请选择文本:&lt;input type=&quot;text&quot; name=&quot;greeting&quot; list=&quot;greetings&quot;/&gt;<br>
+          &lt;!--使用style=&quot;display:none; &quot;将detalist元素设定为不显示--&gt;<br>
+          &lt;datalist id=&quot;greetings&quot; style=&quot;display: none; &quot;&gt;<br>
+          &lt;option value=&quot;Good Morning&quot;&gt;Good Morning&lt;/option&gt;&lt;option value=&quot;Hello&quot;&gt;Hello&lt;/option&gt;<br>
+          &lt;option value=&quot;Good Afternoon &quot;&gt;Good Afternoon&lt;/option&gt;<br>
+          &lt;/datalist&gt;<br>
+        </li>
+        <li><h2>autocomplete属性</h2>
+        autocomplete属性用于设置输人时是否自动完成，提供了十分方便的辅助输人功能。对于autocomplete属性，可以指定其值为&quot;on&quot;&quot;off&quot;与&quot;&quot;三类值。不指定时，使用浏览器的默认值（取决于各浏览器的设定)。该属性设置为on时，可以显式指定待输入的数据列表。如果使用datalist元素与list属性提供待输入的数据列表,自动完成时,可以将该datalist元素中的数据作为待输入的数据在文本框中自动显示。下面的代码为文本框设置了一个autocomplete属性。<br>
+          &lt;input type=&quot;text&quot; name=&quot;school&quot; autocomplete =&quot;on&quot;/&gt;<br>
+          </li>
+        <li><h2>required属性</h2>
+        HTML 5中新增的required属性可以应用在大多数输入元素上（除了隐藏元素图片元素按钮外)。在提交时，如果元素中内容为空白，则不允许提交,同时在浏览器中显示提示信息，提示用户这个元素中必须输入内容。
+        </li>
+        <li><h2>pattern属性</h2>
+          对input元素使用pattern属性，并且将属性值设为某个格式的正则表达式，在提交时会检查其内容是否符合给定格式。当输人的内容不符合给定格式时，则不允许提交，同时在浏览器中显示信息提示文字，提示输入的内容必须符合给定格式。例如，要求输入内容为1个数字与3个大写字母的代码如下。关于模式定义的内容请参考正则表达式方面的书籍。<br>
+          &lt;input type=&quot;text&quot; pattern=&quot;[0-9][A-Z][3}&quot; name=part placeholder=&quot;输入内容:1个数字与3个大写字母。&quot;/&gt;<br>
+        </li>
+        <li><h2>min属性与max属性</h2>
+         min与max这两个属性是数值类型或日期类型的 input元素的专用属性，它们限制了在 input元素中输入的数值与日期的范围。<br>
+        </li>
+    </ol>
+</body>
+</html>

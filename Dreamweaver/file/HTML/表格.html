@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>表格</title>
+<style type="text/css">
+body,td,th {
+	font-size: 24px;
+}
+</style>
+</head>
+
+<body>
+    <ol type="1" start="1">
+        <li><h2>HTML的表格标记</h2>
+        使用成对的&lt;table&gt;&lt;/table&gt;标记就可以定义一个表格。需要说明的是，尽管表格有丰富的标记和属性，但在HTML5中仅保留了表格的border属性和单元格的colspan 、rowspan属性,因此，HTML5中修饰表格的效果需要通过CSS样式表来实现。<br>
+        表格常用标记及其说明：
+        	<ul>
+            	<li>&lt;table&gt;--表格标记</li>
+                <li>&lt;tr&gt;--行标记</li>
+                <li>&lt;td&gt;--单元格标记</li>
+                <li>&lt;th&gt;--表头标记</li>
+            </ul>
+        表格由&lt;table&gt;标记定义,并包含一个或多个&lt;tr&gt;、&lt;th&gt;、&lt;td&gt;标记。&lt;tr&gt;标记用于定义表格行,&lt;th&gt;标记用于定义表头，&lt;t→&gt;标记用于定义具体的表格单元格。复杂的表格也可能包含&lt;caption&gt;、&lt;col&gt;,&lt;colgroup&gt;、&lt;thead&gt;、&lt;tfoot&gt;、&lt;tbody&gt;等标记。定义表格的基本语法格式如下：<br>
+        &lt;table&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt;<br>
+        &lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/table&gt;<br>
+            <ol type="I">
+                <li>&lt;table&gt;&lt;/table&gt;用来定义表格，整个表格需包含在&lt;table&gt;&lt;/table&gt;标记对中&lt;tr&gt;&lt;/tr&gt;用来定义表格中的一行，可以通过在&lt;tr&gt;标记中设置属性来修改该行的显示效果。<br>
+                </li>
+                <li>&lt;th&gt;和&lt;td&gt;用来定义单元格，表格的每一行都可以包含若干单元格，其中可能会包含两种类型的单元格，对应着两种信息，一种是数据，另一种是头信息。&lt;h&gt;标记和&lt;th&gt;标记就是分别用来创建这两种单元格的。<br>
+                </li>
+            </ol>
+            <h2><a href="表格示例.html">表格示例</a></h2>
+        </li>
+        <li>
+        	<h2>HTML表格的属性</h2>
+            <ul>
+            	<li><h3>HTML5支持的表格属性</h3>
+                	<ul>
+                        <li><h4>设置表格边框宽度-border</h4>
+                        默认情况下，表格的边框为0，即不显示表格边框线。可以使用border属性指定表格边框线的宽度，该属性的单位是像素。<br>
+						例如语，句&lt;table border=&quot;2&quot;&gt;指设置表格边框线宽度为2个像素。 
+                        </li>
+                        <li><h4>设置单元格跨列--colspan</h4>
+                        单元格可以向右跨越多个竖列，跨越竖列的数量通过th或td元素的colspan属性进行设置,其语法格式如下。<br>
+                        &lt;td colspan=&quot;value&quot;&gt;<br>
+                        其中，value的值为大于等于2的整数,表示该单元格向右跨越的列数。
+                        </li>
+                    </ul>
+                </li>
+                <li><h3>表格的其他属性</h3>
+                	<ul>
+                    	<li>Width--设置表格宽度</li>
+                        <li>Height--设置表格高度</li>
+                        <li>Bordercolor--设置表格边框颜色</li>
+                        <li>Bgcolor--设置表格的背景颜色</li>
+                        <li>Background--设置表格背景图像</li>
+                        <li>align/ valign--设置表格对齐方式</li>
+                        <li>Cellspacing--设置单元格间距</li>
+                        <li>Cellpadding--设置单元格边距</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2><a href="表格属性示例.html">表格属性示例</a></h2>
+        </li>
+        <li><h2>表格嵌套</h2>
+          在网页制作过程中，有时会用到嵌套的表格，即在表格的一个单元格中嵌套使用一个或者多个表格。<br>
+          在HTML 中，第1个&lt;table&gt;标记表示在网页中插入一个表格,第2个&lt;table&gt;标记插在第1个表格的单元格标记&lt;td&gt;&lt;ltd&gt;之间，表示在该单元格中插入另一个表格，也就是定义嵌套表格。<br>
+          <h2><a href="表格嵌套示例.html">表格嵌套示例</a></h2>
+        </li>
+    </ol>
+</body>
+</html>

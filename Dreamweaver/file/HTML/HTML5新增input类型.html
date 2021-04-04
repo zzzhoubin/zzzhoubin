@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>HTML5新增input类型</title>
+<style type="text/css">
+body,td,th {
+	font-size: 24px;
+}
+</style>
+</head>
+
+<body>
+	<ol type="1" start="1">
+    	<li><h2>数值输入域--number</h2>
+          将&lt;input&gt;标记中的type属性设置为number，可以在表单中插入数值输入域.<br>
+    	  还可以限定输入数字的范围，其语法格式如下。<br>
+          &lt;input name=&quot;&quot; type=&quot;number&quot; min=&quot;&quot; max=&quot;&quot; step=&quot;&quot; value=&quot;&quot;&gt;<br>
+    	  <br>
+    	</li>
+        <li><h2>滑动条-range</h2>
+          将&lt;input&gt;标记中的type属性设置为range，可以在表单中插入表示数值范围的滑动条，还可以限定可接受数值的范围,其语法格式如下。<br>
+          &lt;input name=&quot;&quot; type=&quot;range&quot; min=&quot;&quot; max=&quot;&quot; step=&quot;&quot; value=&quot;&quot;&gt;<br>
+          语法中的属性及用法与数值输入域中的相同。<br>
+        </li>
+        <li>
+          <h2>日期选择器--date pickers</h2>
+          HTML5拥有多个可供选取日期和时间的新输人类型,只要将&lt;input&gt;标记中的type属性设置为以下几种类型中的一种就可以完成对网页中日期选择器的定义。<br>
+          <ul>
+          		<li>date——选取日、月、年</li>
+                <li>month——选取月、年week——选取周、年</li>
+                <li>time—选取时间(小时和分钟)</li>
+                <li>datetime—选取时间、日、月、年（世界标准时间UTC)</li>
+                <li>datetime-local———选取时间、日、月、年（本地时间)</li>
+          </ul>
+        </li>
+        <li><h2>url类型</h2>
+          url类型的input元素是一种专门用来输人url地址的文本框。提交时如果该文本框中内容不是url地址格式的文字,则不允许提交。使用了url类型的 input元素的代码如下:<br>
+          &lt;input name=&quot;urll&quot; type=&quot;url&quot; value=http:/ / www.icourses.cn/&gt;<br>
+        </li>
+        <li><h2>email类型</h2>
+          email类型的input元素是一种专门用来输入email地址的文本框。提交时如果该文本框中内容不是 email 地址格式的文字则不允许提交，但是它并不检查该email 地址是否存在。提交时该email 文本框可以为空,除非加上了 required属性。<br>
+          email类型的文本框具有一个multiple属性,它允许在该文本框中输入一串以逗号分隔的email地址。当然，并不强制要求用户输入该email地址列表。email类型的 input元素的使用方法如下。<br>
+          &lt;input name=&quot;email1&quot; type=&quot;email&quot; value=fengning@163.com /&gt;<br>
+          <br>
+        </li>
+    </ol>
+</body>
+</html>
