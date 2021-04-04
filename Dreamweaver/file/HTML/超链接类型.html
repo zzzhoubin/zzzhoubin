@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>超链接类型</title>
+</head>
+
+<body>
+<h2>超链接类型</h2>
+<ol type="1" start="1">
+    <li><h3>内部链接</h3>将超链接标记&lt;a&gt;中 href属性的URL值设置为相对路径，就可以在HTML文件中定义内部超链接。</li>
+    <li><h3>外部链接</h3>外部链接指网页中的链接标题可以链接到网站外部的文件，需要定义外部链接时，在超链接标记&lt;a&gt;中,将其href属性的URL值设置为绝对路径即可。</li>
+    <li><h3>书签链接</h3>如果有的网页内容特别多，页面特别长，需要不断翻页才能看到想要的内容，这时，可以在页面中(一般是页面的前部）定义一些书签链接。这里的书签相当于方便浏览者查看的目录，单击书签时，就会跳转到相应的内容。实际上，跳转的地址也可以是其他文档中的某一位置。<br>
+    在使用书签链接之前，首先要建立称为&quot;锚记&quot;的链接目标地址，格式如下：<br>
+    &lt;a name=&quot;anchorname&quot;&gt;&lt;/ a&gt;<br>
+    在超级链接部分，指明用户定义的锚记名称，即可链接到指定的位置。<br></li>
+</ol>
+<p style="float:inherit;">
+<h2>链接示例：</h2>
+
+</p>
+<p>&lt;!DOCTYPE HTML&gt;<br>
+  &lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;<br>
+  &lt;title&gt;链接示例&lt;/title&gt;<br>
+  &lt;/head&gt;<br>
+  &lt;body&gt;<br>
+  &lt;a href=&quot;http://www.baidu.com&quot;&gt;百度&lt;/a&gt;<br>
+  &lt;a href=&quot;http://www.luogu.com.cn&quot;&gt;洛谷&lt;/a&gt;<br>
+  &lt;a href=&quot;http://www.4399.com&quot;&gt;4399&lt;/a&gt;<br>
+  &lt;/body&gt;<br>
+  &lt;/html&gt;<br>
+</p>
+<ul>
+  <li><a href="http://www.baidu.com">百度</a></li>
+    <li><a href="http://www.luogu.com.cn">洛谷</a></li>
+    <li><a href="http://www.4399.com">4399</a></li>
+</ul>
+</body>
+</html>
